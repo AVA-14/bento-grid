@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --purple100: hsl(254, 88%, 90%);
+    --purple500: hsl(256, 67%, 59%);
+    --yellow100: hsl(31, 66%, 93%);
+    --yellow500: hsl(39, 100%, 71%);
+}
+
+.main {
+    padding: 35px 20px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.main > * {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.main p {
+    font-size: 18px;
+}
+
+.main .one {
+    background-color: var(--purple500);
+    color: #fff;
+    padding: 35px;
+    text-align: center;
+}
+
+.main .one h1 {
+    padding: 10px 0 30px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.main .one h1 span {
+    color: var(--yellow500);
+}
+
+.main .one p {
+    padding: 30px 0 10px;
+    color: var(--yellow100);
+    position: relative;
+}
+
+.main .one p::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    width: 200px;
+    height: 35px;
+    background-image: url("/images/illustration-five-stars.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main h2 {
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.main .two {
+    background-color: #fff;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.main .two img {
+    width: -webkit-fill-available;
+}
+
+.main .three img {
+    width: -webkit-fill-available;
+    margin: 20px 80px -10px 0px;
+}
+
+.main .three {
+    background-color: var(--yellow500);
+    margin: 30px 0;
+    padding: 20px 20px 0;
+    overflow: hidden;
+}
+
+.main .four img {
+    width: -webkit-fill-available;
+    margin: 20px 0;
+}
+
+.main .four {
+    background-color: var(--purple100);
+    margin: 30px 0;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.main .five img {
+    width: -webkit-fill-available;
+    margin: 25px;
+}
+
+.main .five {
+    background-color: var(--purple500);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px;
+}
+
+.main .five h2 {
+    width: 70%;
+}
+
+.main .six {
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.main .six img {
+    width: -webkit-fill-available;
+    margin: 20px 60px 20px 0;
+}
+
+.main .six span {
+    font-size: 50px;
+    display: block;
+    font-weight: 500;
+}
+
+.main .seven img {
+    width: -webkit-fill-available;
+    margin: 25px 70px 0px 5px;
+}
+
+.main .seven {
+    padding: 35px;
+    margin: 30px 0;
+    background-color: var(--yellow100);
+}
+
+.main .seven h2 {
+    font-size: 30px;
+}
+
+.main .seven span {
+    color: var(--purple500);
+}
+
+.main .eight {
+    padding: 35px;
+    margin: 30px 0;
+    background-color: var(--yellow500);
+}
+
+.main .eight img {
+    width: -webkit-fill-available;
+    margin: 25px 25px 0px 0;
+}
+
+.main .eight h2 {
+    font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    .main {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 23.7%);
+        grid-template-areas: "seven one one four" "seven two three four" "eight two three four" "eight six five five";
+    }
+    .main .one {
+        grid-area: one;
+        margin: 0;
+    }
+    .main .two {
+        grid-area: two;
+        margin: 0;
+    }
+    .main .three {
+        grid-area: three;
+        margin: 0;
+    }
+    .main .four {
+        grid-area: four;
+        margin: 0;
+    }
+    .main .five {
+        grid-area: five;
+        margin: 0;
+        flex-wrap: nowrap;
+    }
+    .main .five img {
+        width: 50%;
+        margin: 25px 25px 0 10px;
+    }
+    .main .six {
+        grid-area: six;
+        margin: 0;
+    }
+    .main .seven {
+        grid-area: seven;
+        margin: 0;
+    }
+    .main .eight {
+        grid-area: eight;
+        margin: 0;
+    }
+    .main .seven img {
+        width: 100%;
+        margin: 70px aut
+    }
+    .main .three img {
+        margin: 15px 0px -30px 0px;
+    }
+}
